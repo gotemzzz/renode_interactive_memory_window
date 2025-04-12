@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "sourceMap": true,
+    "baseUrl": "./"
+  },
+  "include": [
+    "./src/*.ts",
+    "./src/renderer",
+    "./src/backend",
+    "./src/types",
+    "./src/utils",
+  ]
+}

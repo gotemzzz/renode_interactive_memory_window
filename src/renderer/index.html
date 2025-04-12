@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Memory Window</title>
+</head>
+<body>
+    <h1>Welcome to Juicer!</h1>
+    <script src="../../dist/renderer/renderer.js"></script>
+    <link rel="stylesheet" href="index.css">
+
+    <select id="peripheral-select">
+        <option value="0">Peripheral 0</option>
+        <option value="1">Peripheral 1</option>
+        <option value="2">Peripheral 2</option>
+        <option value="3">Peripheral 3</option>
+    </select>
+
+    <div id="memory-search-container">
+        <input type="text" id="search-input" placeholder="0xFFFFFFFF" />
+        <button id="search-button">Search</button>
+        <button id="clear-button">Clear</button>
+    </div>
+
+    <hr />
+
+    <div id="memory-container">
+        <div id="addresses">
+            <div id="address-0">0xE000E000:</div>
+            <div id="address-1">0xE000E000:</div>
+        </div>
+        <div id="values">
+            <div id="row-0" class="address-row">
+                <div contenteditable="true" id="value-0" class="value">00</div>
+                <div contenteditable="true" id="value-1" class="value">00</div>
+                <div contenteditable="true" id="value-2" class="value">00</div>
+                <div contenteditable="true" id="value-3" class="value">00</div>
+            </div>
+
+            <div id="row-1" class="address-row">
+                <div contenteditable="true" id="value-4" class="value">00</div>
+                <div contenteditable="true" id="value-5" class="value">00</div>
+                <div contenteditable="true" id="value-6" class="value">00</div>
+                <div contenteditable="true" id="value-7" class="value">00</div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
