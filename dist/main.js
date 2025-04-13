@@ -7,6 +7,8 @@ const electron_1 = require("electron");
 const path_1 = __importDefault(require("path"));
 const renode_cli_1 = require("./backend/renode-cli");
 const parsePeripherals_1 = __importDefault(require("./utils/parsePeripherals"));
+// disable hardware acceleration for macOS
+electron_1.app.disableHardwareAcceleration();
 // src dir for files other than ts
 const srcDir = path_1.default.join(__dirname, '../src/');
 function createWindow() {

@@ -117,7 +117,9 @@ window.memoryAPI.start().then(async () => {
     // might be worth it to copy the func above and reuse it
     // Rerender the memory window every 500ms
     setInterval(() => {
-        updateCurrentBytes(addressesContainer, valuesContainer, rows, columns, baseAddress, offset, currentBytes, false);
+        // updateCurrentBytes(addressesContainer, valuesContainer, rows, columns, baseAddress, offset, currentBytes, false);
+        // The update function should be put here it should do something similar
+        // to what happens when the search button is pressed
     }, 200);
     document.activeElement;
     // Search button listener

@@ -5,6 +5,9 @@ import { startRenode, stopRenode, sendCommandToRenode, connectToRenodeMonitor, w
 
 import parsePeripherals from "./utils/parsePeripherals";
 
+// disable hardware acceleration for macOS
+app.disableHardwareAcceleration();
+
 // src dir for files other than ts
 const srcDir = path.join(__dirname, '../src/');
 
